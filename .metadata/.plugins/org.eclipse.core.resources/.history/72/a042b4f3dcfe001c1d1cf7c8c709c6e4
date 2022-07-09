@@ -1,0 +1,9 @@
+package com.galdy.sistemaestudantes.service;
+
+import com.galdy.sistemaestudantes.model.Aluno;
+
+public interface AlunoService {
+	
+	public Aluno saveAluno(Aluno aluno);
+	
+}

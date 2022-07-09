@@ -1,0 +1,18 @@
+package com.galdy.sistemaestudantes.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.galdy.sistemaestudantes.model.Aluno;
+import com.galdy.sistemaestudantes.repository.AlunoRepository;
+
+public class AlunoServiceImp implements AlunoService {
+	
+	@Autowired
+	private AlunoRepository repository;
+	
+	@Override
+	public Aluno saveAluno(Aluno aluno) {
+		return repository.save(aluno);
+	}
+	
+}

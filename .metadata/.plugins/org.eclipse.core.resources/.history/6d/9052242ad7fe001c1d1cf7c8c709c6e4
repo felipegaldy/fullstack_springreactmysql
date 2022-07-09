@@ -1,0 +1,5 @@
+package com.galdy.sistemaestudantes.repository;
+
+public interface AlunoRepository {
+
+}

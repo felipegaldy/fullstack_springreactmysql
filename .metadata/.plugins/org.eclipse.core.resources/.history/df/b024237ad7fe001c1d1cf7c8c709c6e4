@@ -1,0 +1,5 @@
+package com.galdy.sistemaestudantes.service;
+
+public interface AlunoService {
+
+}

@@ -1,0 +1,9 @@
+package com.galdy.sistemaestudantes.model;
+
+@Entity
+public class Aluno {
+	
+	private int id;
+	private String aluno;
+	private String endereco;
+}

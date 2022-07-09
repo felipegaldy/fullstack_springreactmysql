@@ -1,0 +1,26 @@
+package com.galdy.sistemaestudantes.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.galdy.sistemaestudantes.model.Aluno;
+import com.galdy.sistemaestudantes.service.AlunoService;
+
+@RestController
+@CrossOrigin("*")
+@RequestMapping("/aluno")
+public class AlunoController {
+	
+	@Autowired
+	private AlunoService service;
+	
+	@PostMapping("/add")
+	public String add(@RequestBody Aluno aluno) {
+		service.saveAluno(aluno);
+	}
+	
+}

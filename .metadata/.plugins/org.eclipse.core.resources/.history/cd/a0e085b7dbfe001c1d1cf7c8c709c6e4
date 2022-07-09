@@ -1,0 +1,5 @@
+package com.galdy.sistemaestudantes.controller;
+
+public class AlunoController {
+
+}

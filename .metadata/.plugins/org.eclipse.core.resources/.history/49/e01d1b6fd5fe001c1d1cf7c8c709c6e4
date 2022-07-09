@@ -1,0 +1,13 @@
+package com.galdy.sistemaestudantes.model;
+
+import javax.persistence.Entity;
+
+
+@Entity
+public class Aluno {
+	
+	private int id;
+	private String aluno;
+	private String endereco;
+	
+}
